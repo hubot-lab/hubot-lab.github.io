@@ -9,11 +9,11 @@
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
-  {% if site.photo %}<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
   <meta name="twitter:description" content="{{ site.description }}">
-  {% if site.photo %}<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,15 +66,9 @@
     "name": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}",
     "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
     "description": "{{ site.description | escape }}",
-    "author": {
-      "@type": "Person",
-      "name": "{{ site.name | escape }}",
-      "jobTitle": "{{ site.title | escape }}",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "{{ site.institution | escape }}"
-      }{% if site.links.google_scholar and site.links.google_scholar != "" %},
-      "sameAs": ["{{ site.links.google_scholar }}"{% if site.links.github and site.links.github != "" %}, "{{ site.links.github }}"{% endif %}{% if site.links.orcid and site.links.orcid != "" %}, "{{ site.links.orcid }}"{% endif %}]{% endif %}
+    "publisher": {
+      "@type": "CollegeOrUniversity",
+      "name": "Soongsil University"
     }
   }
   </script>

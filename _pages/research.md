@@ -1,60 +1,29 @@
 ---
 title: "Research"
 layout: gridlay
-sitemap: false
+sitemap: true
 permalink: /research/
 ---
 
-## Research
-
-<div class="research-grid">
-
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/qed.svg" class="research-thumb" alt="Feynman diagram">
-<div class="research-body">
-<h4 class="research-title">Quantum Electrodynamics</h4>
-<p class="research-desc">Development of the path integral formulation of quantum mechanics and its application to quantum electrodynamics (QED). This work introduced Feynman diagrams as a powerful tool for calculating particle interactions, providing an intuitive visual representation of complex quantum processes.</p>
-</div>
+<div class="page-intro">
+<p class="section-index">RESEARCH</p>
+<h1>From human understanding<br>to physical collaboration.</h1>
+<p>Our research connects perception, embodied learning, and robot intelligence to create systems that can operate naturally and effectively alongside people.</p>
 </div>
 
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/superfluidity.svg" class="research-thumb" alt="Superfluid helium">
-<div class="research-body">
-<h4 class="research-title">Superfluidity</h4>
-<p class="research-desc">Quantum mechanical explanation of the behavior of liquid helium near absolute zero. Using path integral methods, we developed a microscopic theory of the lambda transition and explained the energy spectrum of excitations in superfluid helium, including the roton minimum.</p>
-</div>
-</div>
-
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/partons.svg" class="research-thumb" alt="Parton model">
-<div class="research-body">
-<h4 class="research-title">Parton Model</h4>
-<p class="research-desc">A model describing the internal structure of hadrons in terms of point-like constituents called partons. This framework proved essential for interpreting deep inelastic scattering experiments at SLAC and laid the groundwork for quantum chromodynamics (QCD).</p>
-</div>
-</div>
-
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/quantum-computing.svg" class="research-thumb" alt="Quantum circuit">
-<div class="research-body">
-<h4 class="research-title">Quantum Computing</h4>
-<p class="research-desc">Pioneering proposals for using quantum mechanical systems to perform computation. We demonstrated that classical computers cannot efficiently simulate quantum physics, motivating the development of quantum computers that exploit superposition and entanglement.</p>
-</div>
+<div class="focus-list">
+<article class="focus-row">
+<div class="focus-index">01</div>
+<div><p class="focus-kicker">PERCEIVE · REASON · UNDERSTAND</p><h2>Understand Humans</h2><p>Robots need more than sensors: they need representations that connect people, places, language, and intent. We study robust perception and spatial intelligence for understanding dynamic human environments.</p><div class="topic-list"><span>Perception</span><span>Spatial Intelligence</span><span>State Estimation</span><span>Language</span><span>SLAM</span><span>Navigation</span></div></div>
+</article>
+<article class="focus-row">
+<div class="focus-index">02</div>
+<div><p class="focus-kicker">OBSERVE · IMITATE · GENERALIZE</p><h2>Learn from Humans</h2><p>Human demonstrations contain rich knowledge about motion, contact, and task structure. We develop embodied learning methods that transform these demonstrations into transferable robot skills.</p><div class="topic-list"><span>Imitation Learning</span><span>Human Motion</span><span>Embodied Learning</span><span>Humanoid Robotics</span></div></div>
+</article>
+<article class="focus-row">
+<div class="focus-index">03</div>
+<div><p class="focus-kicker">PLAN · ACT · COLLABORATE</p><h2>Collaborate with Humans</h2><p>We build robots that coordinate their decisions and physical actions with people. Our goal is safe, legible, and capable collaboration across shared spaces and shared tasks.</p><div class="topic-list"><span>Human–Robot Interaction</span><span>Planning</span><span>Control</span><span>Shared Autonomy</span><span>Human Augmentation</span></div></div>
+</article>
 </div>
 
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/nanotechnology.svg" class="research-thumb" alt="Atomic manipulation">
-<div class="research-body">
-<h4 class="research-title">Nanotechnology</h4>
-<p class="research-desc">Exploration of the physical possibilities of manipulating matter at the atomic scale. The talk "There's Plenty of Room at the Bottom" envisioned machines that could arrange atoms one by one, anticipating modern nanotechnology and molecular manufacturing.</p>
-</div>
-</div>
-
-<div class="research-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/research/weak-interactions.svg" class="research-thumb" alt="Weak interaction diagram">
-<div class="research-body">
-<h4 class="research-title">Weak Interactions</h4>
-<p class="research-desc">Development of the V-A theory of the weak interaction with Murray Gell-Mann. This theory correctly predicted the structure of weak decays and was later incorporated into the electroweak unification by Weinberg, Salam, and Glashow.</p>
-</div>
-</div>
-
-</div>
+<div class="research-bridge"><p>Across all three directions, we integrate <strong>perception + learning + planning + control</strong> into complete autonomous and interactive robotic systems.</p></div>

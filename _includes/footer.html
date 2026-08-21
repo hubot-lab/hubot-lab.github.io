@@ -1,32 +1,33 @@
 <footer class="site-footer">
   <div class="footer-grid">
     <div>
-      <h5>About</h5>
+      <h5>HuBot Lab</h5>
       <p>
-        {{ site.name }}<br>
-        {{ site.title }}<br>
-        {{ site.institution }}
+        인간중심 지능로봇 연구실<br>
+        Human-Centered Robotics<br>
+        &amp; Physical Intelligence
       </p>
     </div>
     <div>
-      <h5>Contact</h5>
+      <h5>Affiliation</h5>
       <p>
-        <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope"></i> {{ site.email }}</a><br>
-        {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}"><i class="fa-brands fa-github"></i> GitHub</a><br>{% endif %}
+        숭실대학교 전자정보공학부<br>
+        전자공학전공<br>
+        {{ site.address_ko }}
       </p>
     </div>
     <div>
-      <h5>Links</h5>
+      <h5>Connect</h5>
       <p>
+        <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope"></i> Email</a><br>
         {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}"><i class="ai ai-google-scholar"></i> Google Scholar</a><br>{% endif %}
-        {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}"><i class="ai ai-researchgate"></i> ResearchGate</a><br>{% endif %}
-        <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa-brands fa-github"></i> Use this template!</a>
+        {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}"><i class="fa-brands fa-github"></i> GitHub</a><br>{% endif %}
       </p>
     </div>
   </div>
   <div class="footer-grid">
     <div class="footer-copyright" style="grid-column: 1 / -1;">
-      &copy; {{ "now" | date: "%Y" }} {{ site.name | escape }}
+      &copy; {{ "now" | date: "%Y" }} HuBot Lab · Soongsil University
     </div>
   </div>
 </footer>

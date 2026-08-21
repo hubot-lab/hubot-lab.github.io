@@ -1,81 +1,38 @@
 ---
-title: "Team"
+title: "People"
 layout: gridlay
-sitemap: false
+sitemap: true
 permalink: /team/
 ---
 
-## Team
-
-**We are looking for new team members!**
-
-## PI
-
-<div class="section-card">
-<div class="pi-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
-<div>
-<h3 class="pi-name">{{ site.name }}</h3>
-<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, {{ site.institution }}</p>
-<div class="pi-links">
-{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
-{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.url }}{{ site.baseurl }}/{{ site.links.cv }}" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>{% endif %}
-{% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
-{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
-</div>
-{% if site.data.pi[0].education %}
-<ul style="margin-top: var(--space-4);">
-{% for education in site.data.pi[0].education %}
-<li>{{ education | replace: "-","&#8211;" }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-</div>
-</div>
+<div class="page-intro">
+<p class="section-index">PEOPLE</p>
+<h1>People behind<br>HuBot Lab.</h1>
+<p>We bring together robotics, artificial intelligence, and human-centered thinking to build machines that work with people.</p>
 </div>
 
-{% if site.data.team_members.size > 0 %}
-## Current Students and Postdocs
+<section class="people-section">
+<p class="section-index">PRINCIPAL INVESTIGATOR</p>
+<article class="pi-feature">
+  <div class="pi-portrait"><img src="{{ '/images/donghwi-jung.jpg' | relative_url }}" alt="Donghwi Jung, Principal Investigator of HuBot Lab"></div>
+  <div class="pi-copy">
+    <p class="pi-role">Professor · Principal Investigator</p>
+    <h2>Donghwi Jung <span>정동휘</span></h2>
+    <p>School of Electronic Engineering, Soongsil University<br>{{ site.address_ko }}</p>
+    <p>Donghwi Jung works in robotics, SLAM, mapping and localization, vision-language navigation, human–robot collaboration, and bio-inspired grounding for embodied intelligence. He received his Ph.D. from Seoul National University.</p>
+    <div class="pi-actions">
+      <a href="https://donghwijung.github.io">Personal website ↗</a>
+      <a href="{{ site.links.google_scholar }}">Google Scholar ↗</a>
+      <a href="{{ site.links.github }}">GitHub ↗</a>
+      <a href="mailto:{{ site.email }}">Email ↗</a>
+    </div>
+  </div>
+</article>
+</section>
 
-<div class="team-grid">
-{% for member in site.data.team_members %}
-<div class="team-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" class="team-photo" alt="{{ member.name }}" loading="lazy">
-<h4 class="team-name">{{ member.name }}</h4>
-<p class="team-info">{{ member.info }}</p>
-<div class="team-links">
-{% if member.email %}<a href="mailto:{{ member.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
-{% if member.website %}<a href="{{ member.website }}" class="icon-link" title="Website"><i class="fa-solid fa-house"></i></a>{% endif %}
-{% if member.scholar %}<a href="{{ member.scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-{% if member.github %}<a href="{{ member.github }}" class="icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
-</div>
-</div>
-{% endfor %}
-</div>
-{% endif %}
-
-{% if site.data.alumni.size > 0 %}
-## Alumni
-
-<div class="section-card">
-<table class="alumni-table">
-<thead>
-<tr><th>Name</th><th>Duration</th><th>Current Position</th></tr>
-</thead>
-<tbody>
-{% for member in site.data.alumni %}
-<tr>
-<td>{{ member.name }}</td>
-<td>{{ member.duration }}</td>
-<td>{{ member.info }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
-{% endif %}
-
-## Administrative Support
-
-<a href="mailto:exampleemail@gmail.com">Example staff</a> is helping us (and other groups) with administration.
+<section class="open-team">
+  <p class="section-index">STUDENTS &amp; RESEARCHERS</p>
+  <h2>New lab. New team.<br>Build it with us.</h2>
+  <p>HuBot Lab is forming its founding team. We welcome students interested in robotics, embodied AI, perception, learning, planning, control, and human–robot interaction.</p>
+  <a href="{{ '/join/' | relative_url }}" class="lab-button lab-button-primary">See open opportunities</a>
+</section>

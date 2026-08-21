@@ -1,39 +1,66 @@
 ---
 title: "Home"
 layout: homelay
-sitemap: false
+sitemap: true
 permalink: /
 ---
 
-<h2 class="home-hero">{{ site.name }}</h2>
-<p class="home-hero-sub">{{ site.title }}, {{ site.institution }}</p>
+<section class="lab-hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow">인간중심 지능로봇 연구실 · 숭실대학교</p>
+    <h1 id="hero-title">Robots that understand,<br><span>learn from,</span> and work with humans.</h1>
+    <p class="hero-subtitle">Human-Centered Robotics &amp; Physical Intelligence</p>
+    <p class="hero-mantra"><span>Collaborate</span><i></i><span>Imitate</span><i></i><span>Integrate</span></p>
+    <div class="hero-actions">
+      <a href="{{ '/research/' | relative_url }}" class="lab-button lab-button-primary">Explore our research <span aria-hidden="true">↗</span></a>
+      <a href="{{ '/join/' | relative_url }}" class="lab-button lab-button-ghost">Join HuBot Lab</a>
+    </div>
+  </div>
+  <div class="hero-orbit" aria-hidden="true">
+    <div class="orbit orbit-one"></div>
+    <div class="orbit orbit-two"></div>
+    <div class="orbit-core"><span>H</span></div>
+    <div class="orbit-label orbit-label-a">PERCEIVE</div>
+    <div class="orbit-label orbit-label-b">LEARN</div>
+    <div class="orbit-label orbit-label-c">ACT</div>
+  </div>
+</section>
 
-<div class="chip-container" markdown="0">
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Quantum Electrodynamics</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Path Integrals</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Superfluidity</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Parton Model</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Quantum Computing</a>
-<a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Nanotechnology</a>
-</div>
+<section class="lab-question">
+  <p class="section-index">01 · OUR QUESTION</p>
+  <h2>How can robots understand, learn from, and physically collaborate with humans?</h2>
+</section>
 
-Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
-It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
-Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
+<section class="research-pillars" aria-label="Research pillars">
+  <article class="pillar-card">
+    <div class="pillar-number">01</div>
+    <h3>Understand<br>Humans</h3>
+    <p>Building perceptual systems that interpret people, spaces, and intent in a changing physical world.</p>
+    <ul><li>Perception</li><li>Spatial Intelligence</li><li>State Estimation</li><li>Language</li></ul>
+  </article>
+  <article class="pillar-card">
+    <div class="pillar-number">02</div>
+    <h3>Learn from<br>Humans</h3>
+    <p>Enabling embodied agents to acquire skills from human motion, demonstration, and interaction.</p>
+    <ul><li>Imitation</li><li>Human Motion</li><li>Embodied Learning</li><li>Humanoid</li></ul>
+  </article>
+  <article class="pillar-card">
+    <div class="pillar-number">03</div>
+    <h3>Collaborate with<br>Humans</h3>
+    <p>Designing intelligent robots that safely share decisions, control, and physical tasks with people.</p>
+    <ul><li>HRI</li><li>Planning &amp; Control</li><li>Shared Autonomy</li><li>Augmentation</li></ul>
+  </article>
+</section>
 
-<div class="callout callout-success" markdown="0">
-<div class="callout-title"><i class="fa-solid fa-award callout-icon"></i> Nobel Prize in Physics, 1965</div>
-<p>Awarded the Nobel Prize jointly with Julian Schwinger and Shin'ichiro Tomonaga for fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles.</p>
-</div>
+<section class="lab-statement">
+  <div>
+    <p class="section-index">02 · OUR MISSION</p>
+    <h2>Physical intelligence for autonomous and interactive robotic systems.</h2>
+  </div>
+  <p>HuBot Lab develops robots that perceive and understand the physical world, learn from humans, and intelligently interact with humans. We connect perception, learning, planning, and control to move robotics from isolated autonomy toward meaningful human collaboration.</p>
+</section>
 
-<div class="banner-frame" markdown="0">
-<img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" alt="Feynman diagrams" loading="lazy">
-<div class="banner-caption">Examples of Feynman diagrams. Feynman R., <em>The theory of positrons. Phys. Rev.</em> (1949)</div>
-</div>
-
-### About me
-
-I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
-I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.
-After completing my doctoral studies, I worked on the Manhattan Project, where I helped develop the first atomic bombs.
-After the war, I returned to academia, holding teaching and research positions at Cornell and now at the California Institute of Technology.
+<section class="lab-cta">
+  <p>We are building the next generation of human-centered robots.</p>
+  <a href="{{ '/join/' | relative_url }}">Work with us <span aria-hidden="true">→</span></a>
+</section>
