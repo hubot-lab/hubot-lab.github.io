@@ -5,6 +5,7 @@ sitemap: true
 permalink: /join/
 ---
 
+<div class="lab-page-root" markdown="0">
 <div class="page-intro join-intro">
 <p class="section-index">JOIN HUBOT LAB</p>
 <h1>Let’s build robots<br>that work with us.</h1>
@@ -26,3 +27,4 @@ permalink: /join/
 </div>
 
 <div class="join-note"><strong>Lab location:</strong> {{ site.address_ko }} · <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>Detailed openings and application timelines will be posted here when confirmed.</div>
+</div>

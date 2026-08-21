@@ -5,6 +5,7 @@ sitemap: false
 permalink: /about/
 ---
 
+<div class="lab-page-root" markdown="0">
 <div class="page-intro">
 <p class="section-index">ABOUT HUBOT LAB</p>
 <h1>Human-centered robotics<br>&amp; physical intelligence.</h1>
@@ -12,3 +13,4 @@ permalink: /about/
 </div>
 
 <p style="margin-top: 2rem;"><a href="{{ '/research/' | relative_url }}">Explore our research →</a></p>
+</div>

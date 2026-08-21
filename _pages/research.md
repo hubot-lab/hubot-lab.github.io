@@ -5,6 +5,7 @@ sitemap: true
 permalink: /research/
 ---
 
+<div class="lab-page-root" markdown="0">
 <div class="page-intro">
 <p class="section-index">RESEARCH</p>
 <h1>From human understanding<br>to physical collaboration.</h1>
@@ -27,3 +28,4 @@ permalink: /research/
 </div>
 
 <div class="research-bridge"><p>Across all three directions, we integrate <strong>perception + learning + planning + control</strong> into complete autonomous and interactive robotic systems.</p></div>
+</div>

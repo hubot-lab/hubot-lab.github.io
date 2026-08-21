@@ -5,6 +5,7 @@ sitemap: true
 permalink: /
 ---
 
+<div class="lab-page-root" markdown="0">
 <section class="lab-hero" aria-labelledby="hero-title">
   <div class="hero-copy">
     <p class="eyebrow">인간중심 지능로봇 연구실 · 숭실대학교</p>
@@ -64,3 +65,4 @@ permalink: /
   <p>We are building the next generation of human-centered robots.</p>
   <a href="{{ '/join/' | relative_url }}">Work with us <span aria-hidden="true">→</span></a>
 </section>
+</div>

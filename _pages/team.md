@@ -5,6 +5,7 @@ sitemap: true
 permalink: /team/
 ---
 
+<div class="lab-page-root" markdown="0">
 <div class="page-intro">
 <p class="section-index">PEOPLE</p>
 <h1>People behind<br>HuBot Lab.</h1>
@@ -36,3 +37,4 @@ permalink: /team/
   <p>HuBot Lab is forming its founding team. We welcome students interested in robotics, embodied AI, perception, learning, planning, control, and human–robot interaction.</p>
   <a href="{{ '/join/' | relative_url }}" class="lab-button lab-button-primary">See open opportunities</a>
 </section>
+</div>
