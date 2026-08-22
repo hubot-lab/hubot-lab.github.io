@@ -4,25 +4,25 @@
 
 :root {
   // Accent — a warm scholarly teal
-  --accent: #1a7a6d;
-  --accent-hover: #15655a;
-  --accent-light: rgba(26, 122, 109, 0.08);
+  --accent: #315fce;
+  --accent-hover: #234aa8;
+  --accent-light: rgba(49, 95, 206, 0.08);
 
   // Light mode — warm parchment tones
-  --bg-primary: #fffdf7;
-  --bg-secondary: #f2f0e9;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f7f9;
   --bg-card: #ffffff;
-  --text-primary: #151714;
-  --text-secondary: #555750;
-  --text-muted: #83857e;
-  --border-color: #ddded7;
+  --text-primary: #101522;
+  --text-secondary: #525b6b;
+  --text-muted: #7d8696;
+  --border-color: #e2e5ea;
   --shadow-sm: 0 1px 3px rgba(44, 42, 37, 0.06);
   --shadow-md: 0 4px 12px rgba(44, 42, 37, 0.08);
   --shadow-lg: 0 8px 24px rgba(44, 42, 37, 0.1);
   --shadow-navbar: 0 1px 4px rgba(44, 42, 37, 0.1);
 
   // Layout
-  --container-max: 1100px;
+  --container-max: 1180px;
   --container-padding: 1.5rem;
 
   // Spacing scale
@@ -51,17 +51,17 @@
 
 // Dark mode — rich warm dark
 [data-bs-theme="dark"] {
-  --accent: #3dbaa8;
-  --accent-hover: #5dd4c2;
-  --accent-light: rgba(61, 186, 168, 0.1);
+  --accent: #79a0ff;
+  --accent-hover: #9ab8ff;
+  --accent-light: rgba(121, 160, 255, 0.1);
 
-  --bg-primary: #1c1b18;
-  --bg-secondary: #262520;
-  --bg-card: #2a2924;
-  --text-primary: #e8e4dc;
-  --text-secondary: #b5b0a5;
-  --text-muted: #7d796f;
-  --border-color: #3d3a33;
+  --bg-primary: #11141a;
+  --bg-secondary: #181c24;
+  --bg-card: #181c24;
+  --text-primary: #f2f4f8;
+  --text-secondary: #b8c0ce;
+  --text-muted: #818b9c;
+  --border-color: #2a303b;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);

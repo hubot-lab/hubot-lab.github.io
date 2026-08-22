@@ -3,10 +3,10 @@
 // =============================================================
 
 .site-footer {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-primary);
   border-top: 1px solid var(--border-color);
-  padding: var(--space-12) 0 var(--space-8);
-  margin-top: var(--space-16);
+  padding: 3rem 0 2rem;
+  margin-top: 6rem;
   position: relative;
 
   h5 {
@@ -32,7 +32,7 @@
 
   .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1.4fr 0.7fr;
     gap: var(--space-8);
     max-width: var(--container-max);
     margin: 0 auto;
@@ -45,7 +45,7 @@
   }
 
   .footer-copyright {
-    text-align: center;
+    text-align: left;
     margin-top: var(--space-8);
     padding-top: var(--space-6);
     border-top: 1px solid var(--border-color);

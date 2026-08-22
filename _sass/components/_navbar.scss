@@ -4,12 +4,10 @@
 
 .navbar {
   border-bottom: 1px solid var(--border-color);
-  padding: var(--space-3) var(--space-4);
+  padding: 1rem var(--space-4);
   transition: box-shadow var(--transition-base);
   z-index: 1030;
-  backdrop-filter: saturate(180%) blur(16px);
-  -webkit-backdrop-filter: saturate(180%) blur(16px);
-  background-color: rgba(255, 253, 247, 0.86) !important;
+  background-color: rgba(255, 255, 255, 0.96) !important;
 
   &.scrolled {
     box-shadow: var(--shadow-navbar);
@@ -17,7 +15,7 @@
 }
 
 [data-bs-theme="dark"] .navbar {
-  background-color: rgba(28, 27, 24, 0.85) !important;
+  background-color: rgba(17, 20, 26, 0.96) !important;
 }
 
 .navbar-brand {
@@ -25,14 +23,7 @@
   font-weight: 700;
   letter-spacing: -0.01em;
   color: var(--text-primary) !important;
-  font-size: 1.125rem;
-
-  strong { color: var(--accent); }
-
-  img {
-    border-radius: 0;
-    opacity: 0.85;
-  }
+  font-size: 1.05rem;
 }
 
 .nav-link {
@@ -40,29 +31,19 @@
   font-weight: 500;
   font-size: 0.8125rem;
   padding: var(--space-2) var(--space-3) !important;
-  border-radius: var(--radius-sm);
   transition: color var(--transition-fast), background-color var(--transition-fast);
   letter-spacing: 0.02em;
 
   &:hover {
     color: var(--accent) !important;
-    background-color: var(--accent-light);
+    background-color: transparent;
   }
 
   &.active {
     color: var(--accent) !important;
     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 2px;
-      left: var(--space-3);
-      right: var(--space-3);
-      height: 2px;
-      background-color: var(--accent);
-      border-radius: 1px;
-    }
+    &::after { display: none; }
   }
 }
 

@@ -3,7 +3,7 @@
 // =============================================================
 
 .pub-entry {
-  padding: var(--space-6) 0;
+  padding: 1.75rem 0;
   border-bottom: 1px solid var(--border-color);
   position: relative;
 
@@ -37,19 +37,7 @@
 
 // Year badge — accent pill floated right
 .year-badge {
-  display: inline-block;
-  float: right;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  padding: 0.15rem 0.625rem;
-  border-radius: var(--radius-full);
-  background-color: var(--accent-light);
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  margin-left: var(--space-3);
-  margin-top: var(--space-1);
+  display: none;
 }
 
 // Collapsible bibtex/abstract
@@ -118,8 +106,8 @@
   width: 100%;
   padding: var(--space-3) var(--space-4);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-full);
-  background-color: var(--bg-card);
+  border-radius: 0;
+  background-color: transparent;
   color: var(--text-primary);
   font-family: 'DM Sans', sans-serif;
   font-size: 0.875rem;

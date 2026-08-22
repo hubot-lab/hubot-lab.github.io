@@ -24,11 +24,10 @@ links:
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#ef5b2a"      # theme color for links and buttons
+accent_color: "#315fce"      # theme color for links and buttons
 dark_mode: true              # show dark mode toggle in navbar
 description: "HuBot Lab at Soongsil University studies human-centered robotics and physical intelligence."
-address: "Research Building, Room 105, Soongsil University"
-address_ko: "숭실대학교 연구관 105호"
+address: "Research Building, Room 105, Soongsil University, Seoul, Republic of Korea"
 baseurl: ""
 url: "https://hubot-lab.github.io"
 lang: "en"

@@ -2,7 +2,7 @@
 ---
 
 <div class="pub-entry" data-pub-searchable>
-  <div class="text-justify">{{ reference }}</div>
+  <div class="publication-reference">{{ reference | replace: 'Jung, D.', '<strong>Jung, D.</strong>' | replace: 'Jung, Donghwi', '<strong>Jung, Donghwi</strong>' }}</div>
 
   <!-- You can use the below to make your name bold -->
   <!-- <div class="text-justify">{{ reference | replace_first: 'Bryngelson, S. H.', '<b>Bryngelson, S. H.</b>' }}</div> -->
@@ -18,6 +18,10 @@
   {% endif %}
 
   <div class="pub-actions">
+    {% if entry.url %}
+    <a href="{{ entry.url }}" target="_blank" rel="noopener" class="btn-pill btn-paper">Paper</a>
+    {% endif %}
+
     {% if bibtest %}
     <a href="{{ site.url }}{{ site.baseurl }}/papers/{{ entry.file }}" target="_blank" class="btn-pill btn-pdf">PDF</a>
     {% endif %}
