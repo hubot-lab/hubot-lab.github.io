@@ -2,6 +2,14 @@
 ---
 
 <div class="pub-entry" data-pub-searchable>
+  {% if entry.preview %}
+  {% capture preview_src %}/images/publications/{{ entry.preview }}{% endcapture %}
+  {% if entry.url %}<a class="pub-thumbnail" href="{{ entry.url }}" target="_blank" rel="noopener" aria-label="Open {{ entry.title | remove: '{' | remove: '}' | escape }}">{% else %}<div class="pub-thumbnail">{% endif %}
+    <img src="{{ preview_src | relative_url }}" alt="Preview for {{ entry.title | remove: '{' | remove: '}' | escape }}" loading="lazy">
+  {% if entry.url %}</a>{% else %}</div>{% endif %}
+  {% endif %}
+
+  <div class="pub-content">
   <div class="publication-reference">{{ reference | replace: 'Jung, D.', '<strong>Jung, D.</strong>' | replace: 'Jung, Donghwi', '<strong>Jung, Donghwi</strong>' }}</div>
 
   <!-- You can use the below to make your name bold -->
@@ -58,4 +66,5 @@
     <pre>{{ entry.abstract }}</pre>
   </div>
   {% endif %}
+  </div>
 </div>

@@ -3,6 +3,9 @@
 // =============================================================
 
 .pub-entry {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 1.5rem;
   padding: 1.75rem 0;
   border-bottom: 1px solid var(--border-color);
   position: relative;
@@ -33,6 +36,49 @@
     gap: var(--space-2);
     margin-top: var(--space-3);
   }
+}
+
+.pub-thumbnail {
+  width: 100%;
+  height: 132px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background: #fff;
+  background-image: none !important;
+  padding: 0;
+}
+
+.pub-thumbnail img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform var(--transition-base);
+}
+
+a.pub-thumbnail:hover img {
+  transform: scale(1.025);
+}
+
+.pub-content {
+  min-width: 0;
+}
+
+.publication-reference {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.publication-reference strong {
+  color: var(--text-primary);
+}
+
+.publication-list .bibliography > li {
+  max-width: none;
 }
 
 // Year badge — accent pill floated right
@@ -122,5 +168,23 @@
 
   &::placeholder {
     color: var(--text-muted);
+  }
+}
+
+@media (max-width: 680px) {
+  .pub-entry {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pub-thumbnail {
+    width: min(100%, 320px);
+    height: 180px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-thumbnail img {
+    transition: none;
   }
 }
