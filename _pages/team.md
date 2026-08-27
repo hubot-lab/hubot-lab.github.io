@@ -20,7 +20,7 @@ permalink: /team/
     <p class="pi-role">Assistant Professor / Principal Investigator · 조교수 / 연구책임자</p>
     <h2>Donghwi Jung</h2>
     <p>{{ site.institution }}<br>{{ site.address }}<br><span lang="ko">{{ site.address_ko }}</span></p>
-    <p>Donghwi Jung works in robotics, SLAM, mapping and localization, vision-language navigation, human-robot collaboration, and bio-inspired grounding for embodied intelligence, with humanoid robots as a strategic integration platform. He received his Ph.D. from Seoul National University.<span class="bilingual-ko" lang="ko">정동휘 교수는 휴머노이드 로봇을 전략적 통합 플랫폼으로 삼아 SLAM, 시각-언어 내비게이션, 인간-로봇 협업과 Embodied Intelligence를 연구합니다.</span></p>
+    <p>Donghwi Jung works in robotics, SLAM, mapping and localization, vision-language navigation, human-robot collaboration, and bio-inspired grounding for embodied intelligence, with humanoid robots as a strategic integration platform. He received his Ph.D. from Seoul National University.<span class="bilingual-ko" lang="ko">휴머노이드 로봇을 전략적 통합 플랫폼으로 삼아 SLAM, 시각-언어 내비게이션, 인간-로봇 협업과 Embodied Intelligence를 연구합니다.</span></p>
     <div class="pi-actions">
       <a href="https://donghwijung.github.io">Personal website</a>
       <a href="{{ site.links.google_scholar }}">Google Scholar</a>
@@ -34,7 +34,7 @@ permalink: /team/
 <section class="open-team">
   <p class="section-index">STUDENTS &amp; RESEARCHERS · 학생 및 연구원</p>
   <h2>New lab. New team. Build it with us.</h2>
-  <p>HuBot Lab is forming its founding team. We welcome students interested in humanoid and autonomous robotics, physical intelligence, perception, embodied learning, planning, control, and human-robot interaction.<span class="bilingual-ko" lang="ko">HuBot Lab의 첫 구성원으로 함께 성장할 대학원생과 학부연구생을 모집합니다.</span></p>
+  <p>HuBot Lab is forming its founding team. We welcome students interested in humanoid and autonomous robotics, physical intelligence, perception, embodied learning, planning, control, and human-robot interaction.<span class="bilingual-ko" lang="ko">HuBot Lab의 구성원으로 함께 성장할 대학원생과 학부연구생을 모집합니다.</span></p>
   <a href="{{ '/join/' | relative_url }}" class="text-link">See open opportunities · 모집 안내 <span aria-hidden="true">→</span></a>
 </section>
 </div>
