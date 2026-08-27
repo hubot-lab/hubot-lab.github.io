@@ -34,7 +34,7 @@ permalink: /team/
 <section class="open-team">
   <p class="section-index">STUDENTS &amp; RESEARCHERS</p>
   <h2>New lab. New team. Build it with us.</h2>
-  <p>HuBot Lab is forming its founding team. We welcome students interested in humanoid and autonomous robotics, embodied AI, perception, learning, planning, control, and human-robot interaction.</p>
+  <p>HuBot Lab is forming its founding team. We welcome students interested in humanoid and autonomous robotics, physical intelligence, perception, embodied learning, planning, control, and human-robot interaction.</p>
   <a href="{{ '/join/' | relative_url }}" class="text-link">See open opportunities <span aria-hidden="true">→</span></a>
 </section>
 </div>

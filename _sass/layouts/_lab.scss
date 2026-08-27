@@ -149,7 +149,9 @@
   letter-spacing: -0.04em;
 }
 
-.lab-cta > p { margin: 0; }
+.lab-cta-copy p { margin: 0; }
+.lab-cta-copy .recruitment-roles { margin-bottom: 0.65rem; color: var(--text-primary); font-weight: 700; }
+.lab-cta-copy p[lang="ko"] { color: var(--text-secondary); line-height: 1.75; }
 
 .page-intro,
 .publication-intro {
@@ -256,6 +258,33 @@
   border-left: 1px solid var(--border-color);
 }
 
+.join-list { margin: 1.25rem 0 0; padding-left: 1.15rem; }
+.join-list li { margin-bottom: 0.65rem; color: var(--text-secondary); }
+.bilingual-ko {
+  display: block;
+  margin-top: 0.9rem;
+  color: var(--text-secondary);
+  font-size: 0.94em;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+
+.join-apply {
+  margin-top: clamp(4rem, 8vw, 7rem);
+  padding-top: 2rem;
+  border-top: 2px solid var(--text-primary);
+}
+
+.join-apply h2 {
+  margin: 0 0 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.join-apply > p:not(.section-index) { max-width: 760px; }
+.join-apply .text-link { margin-top: 0.75rem; }
 .join-note { margin-top: 2rem; color: var(--text-muted); font-size: 0.85rem; }
 
 @media (max-width: 760px) {
