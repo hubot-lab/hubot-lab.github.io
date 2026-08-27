@@ -10,7 +10,7 @@ permalink: /
   <div class="hero-copy">
     <p class="eyebrow">Soongsil University · Seoul</p>
     <h1 id="hero-title">Human-Centered Robotics &amp; Physical Intelligence.</h1>
-    <p class="hero-subtitle">Building robots that understand, learn from, and work with humans.</p>
+    <p class="hero-subtitle">Building robots that understand, learn from, and work with humans.<span class="bilingual-ko" lang="ko">사람을 이해하고, 사람에게 배우며, 사람과 협력하는 로봇을 연구합니다.</span></p>
     <div class="hero-actions">
       <a href="{{ '/research/' | relative_url }}" class="text-link">Explore our research <span aria-hidden="true">→</span></a>
       <a href="{{ '/join/' | relative_url }}" class="text-link">Join the lab <span aria-hidden="true">→</span></a>
@@ -29,7 +29,7 @@ permalink: /
 
 <section class="home-section" aria-labelledby="research-title">
   <div class="section-heading">
-    <p class="section-index">Research</p>
+    <p class="section-index">Research · 연구</p>
     <h2 id="research-title">Robots that understand, learn, and collaborate.</h2>
   </div>
   <div class="research-list">
@@ -51,7 +51,7 @@ permalink: /
 
 <section class="home-section platform-section" aria-labelledby="platform-title">
   <div class="section-heading">
-    <p class="section-index">Flagship platform</p>
+    <p class="section-index">Flagship platform · 대표 플랫폼</p>
     <h2 id="platform-title">Humanoid robotic systems.</h2>
   </div>
   <div class="platform-copy">
@@ -66,7 +66,7 @@ permalink: /
 
 <section class="home-section home-publications" aria-labelledby="recent-title">
   <div class="section-heading">
-    <p class="section-index">Selected publications</p>
+    <p class="section-index">Selected publications · 주요 연구 성과</p>
     <h2 id="recent-title">Recent work</h2>
   </div>
   <ol class="featured-publications">
