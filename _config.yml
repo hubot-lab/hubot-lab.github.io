@@ -20,7 +20,7 @@ links:
 # ============================================================
 accent_color: "#315fce"      # theme color for links and buttons
 dark_mode: true              # show dark mode toggle in navbar
-description: "HuBot Lab at Soongsil University studies human-centered robotics and physical intelligence."
+description: "HuBot Lab studies human-centered robotics and physical intelligence, using humanoid robots as its flagship platform."
 address: "Research Building, Room 105, Soongsil University, Seoul, Republic of Korea"
 baseurl: ""
 url: "https://hubot-lab.github.io"

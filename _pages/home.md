@@ -9,8 +9,8 @@ permalink: /
 <section class="lab-hero" aria-labelledby="hero-title">
   <div class="hero-copy">
     <p class="eyebrow">Soongsil University · Seoul</p>
-    <h1 id="hero-title">Human-centered robotics and physical intelligence.</h1>
-    <p class="hero-subtitle">We build robots that perceive the physical world, learn from people, and collaborate with humans.</p>
+    <h1 id="hero-title">Human-Centered Robotics &amp; Physical Intelligence.</h1>
+    <p class="hero-subtitle">Building robots that understand, learn from, and work with humans.</p>
     <div class="hero-actions">
       <a href="{{ '/research/' | relative_url }}" class="text-link">Explore our research <span aria-hidden="true">→</span></a>
       <a href="{{ '/join/' | relative_url }}" class="text-link">Join the lab <span aria-hidden="true">→</span></a>
@@ -40,6 +40,21 @@ permalink: /
   <a href="{{ '/research/' | relative_url }}" class="text-link">View research areas <span aria-hidden="true">→</span></a>
 </section>
 
+<section class="home-section platform-section" aria-labelledby="platform-title">
+  <div class="section-heading">
+    <p class="section-index">Flagship platform</p>
+    <h2 id="platform-title">Humanoid robotic systems.</h2>
+  </div>
+  <div class="platform-copy">
+    <p class="platform-lead">Humanoid robots are our primary platform for integrating perception, learning, planning, and control.</p>
+    <p>The underlying methods extend to autonomous robots and other embodied systems.</p>
+    <p class="platform-path" aria-label="Understand, then learn, then collaborate">
+      <span>Understand</span><span aria-hidden="true">→</span><span>Learn</span><span aria-hidden="true">→</span><span>Collaborate</span>
+    </p>
+    <p class="platform-horizon">Toward human-like embodied intelligence.</p>
+  </div>
+</section>
+
 <section class="home-section home-publications" aria-labelledby="recent-title">
   <div class="section-heading">
     <p class="section-index">Selected publications</p>
@@ -55,7 +70,7 @@ permalink: /
 
 <section class="lab-cta">
   <div><p class="section-index">Join us</p><h2>Build the lab with us.</h2></div>
-  <p>We welcome students interested in robotics, embodied AI, perception, learning, planning, and control.</p>
+  <p>We welcome students interested in humanoid robotics, embodied AI, perception, learning, planning, control, and human-robot interaction.</p>
   <a href="{{ '/join/' | relative_url }}" class="text-link">Open opportunities <span aria-hidden="true">→</span></a>
 </section>
 </div>

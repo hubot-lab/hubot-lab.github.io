@@ -116,6 +116,23 @@
 .featured-publications p { margin-top: 0.35rem; color: var(--text-muted); font-size: 0.82rem; }
 .home-section > .text-link { grid-column: 2; }
 
+.platform-copy { max-width: 760px; }
+.platform-copy > p { margin-top: 0; }
+.platform-lead { color: var(--text-primary) !important; font-size: clamp(1.05rem, 1.8vw, 1.35rem); }
+.platform-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.9rem;
+  margin: 2rem 0 0.75rem !important;
+  color: var(--text-primary) !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.platform-path span:nth-child(even) { color: var(--accent); }
+.platform-horizon { color: var(--text-muted) !important; font-size: 0.86rem; }
+
 .lab-cta {
   display: grid;
   grid-template-columns: minmax(190px, 0.7fr) minmax(0, 1.2fr) auto;
@@ -171,7 +188,16 @@
 
 .research-bridge,
 .open-team { margin-top: clamp(4rem, 8vw, 7rem); padding-top: 2rem; border-top: 2px solid var(--text-primary); }
-.research-bridge p { max-width: 850px; font-size: clamp(1.1rem, 2vw, 1.45rem); }
+.research-bridge h2 {
+  max-width: 850px;
+  margin: 0 0 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+.research-bridge > p:not(.section-index):not(.research-horizon) { max-width: 850px; font-size: clamp(1.05rem, 1.8vw, 1.3rem); }
+.research-horizon { max-width: 850px; margin-top: 1.5rem; color: var(--text-muted) !important; font-size: 0.9rem; }
 .people-section { padding-top: clamp(4rem, 8vw, 7rem); }
 
 .pi-feature {

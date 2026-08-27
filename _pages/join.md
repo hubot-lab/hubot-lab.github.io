@@ -8,7 +8,7 @@ permalink: /join/
 <div class="lab-page-root" markdown="0">
 <div class="page-intro join-intro">
 <p class="section-index">JOIN HUBOT LAB</p>
-<h1>Let us build robots that work with us.</h1>
+<h1>Build robots that understand, learn, and collaborate.</h1>
 <p>We are looking for curious, kind, and driven people who want to advance human-centered robotics and physical intelligence.</p>
 </div>
 
@@ -16,7 +16,7 @@ permalink: /join/
 <section>
   <p class="section-index">WHO WE ARE LOOKING FOR</p>
   <h2>Prospective students</h2>
-  <p>Students with interests in robotics, artificial intelligence, perception, embodied learning, motion planning, control, or human-robot interaction are encouraged to get in touch.</p>
+  <p>Students interested in humanoid or autonomous robotics, spatial intelligence, embodied learning, planning, control, or human-robot interaction are encouraged to get in touch.</p>
 </section>
 <section>
   <p class="section-index">HOW TO REACH US</p>
