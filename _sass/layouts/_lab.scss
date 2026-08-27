@@ -138,7 +138,8 @@
   grid-template-columns: minmax(190px, 0.7fr) minmax(0, 1.2fr) auto;
   gap: clamp(2rem, 5vw, 5rem);
   align-items: end;
-  padding: clamp(4.5rem, 9vw, 7rem) 0 2rem;
+  padding: clamp(3.5rem, 7vw, 5.5rem) 0;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .lab-cta h2 {

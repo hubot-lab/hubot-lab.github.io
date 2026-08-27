@@ -18,6 +18,15 @@ permalink: /
   </div>
 </section>
 
+<section class="lab-cta">
+  <div><p class="section-index">Open positions · 연구원 모집</p><h2>Join HuBot Lab.</h2></div>
+  <div class="lab-cta-copy">
+    <p class="recruitment-roles">MS &amp; PhD Students · Undergraduate Researchers</p>
+    <p lang="ko">휴머노이드 로봇, physical intelligence, spatial intelligence, embodied learning, planning 및 control 연구에 함께할 대학원생과 학부연구생을 모집합니다.</p>
+  </div>
+  <a href="{{ '/join/' | relative_url }}" class="text-link">View positions · 모집 안내 <span aria-hidden="true">→</span></a>
+</section>
+
 <section class="home-section" aria-labelledby="research-title">
   <div class="section-heading">
     <p class="section-index">Research</p>
@@ -68,12 +77,4 @@ permalink: /
   <a href="{{ '/publications/' | relative_url }}" class="text-link">See all publications <span aria-hidden="true">→</span></a>
 </section>
 
-<section class="lab-cta">
-  <div><p class="section-index">Open positions · 연구원 모집</p><h2>Join HuBot Lab.</h2></div>
-  <div class="lab-cta-copy">
-    <p class="recruitment-roles">MS &amp; PhD Students · Undergraduate Researchers</p>
-    <p lang="ko">휴머노이드 로봇, physical intelligence, spatial intelligence, embodied learning, planning 및 control 연구에 함께할 대학원생과 학부연구생을 모집합니다.</p>
-  </div>
-  <a href="{{ '/join/' | relative_url }}" class="text-link">View positions · 모집 안내 <span aria-hidden="true">→</span></a>
-</section>
 </div>

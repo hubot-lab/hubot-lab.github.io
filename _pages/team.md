@@ -19,7 +19,7 @@ permalink: /team/
   <div class="pi-copy">
     <p class="pi-role">Assistant Professor / Principal Investigator</p>
     <h2>Donghwi Jung</h2>
-    <p>{{ site.institution }}<br>{{ site.address }}</p>
+    <p>{{ site.institution }}<br>{{ site.address }}<br><span lang="ko">{{ site.address_ko }}</span></p>
     <p>Donghwi Jung works in robotics, SLAM, mapping and localization, vision-language navigation, human-robot collaboration, and bio-inspired grounding for embodied intelligence, with humanoid robots as a strategic integration platform. He received his Ph.D. from Seoul National University.</p>
     <div class="pi-actions">
       <a href="https://donghwijung.github.io">Personal website</a>

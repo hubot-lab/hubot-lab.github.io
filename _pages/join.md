@@ -20,7 +20,7 @@ permalink: /join/
 </section>
 <section>
   <p class="section-index">UNDERGRADUATE RESEARCH · 학부연구생</p>
-  <h2>Research Assistants</h2>
+  <h2>Undergraduate Researchers</h2>
   <p>Undergraduate students seeking hands-on research experience—or considering future graduate study—are encouraged to apply. You will learn how to formulate research questions, implement robotic systems, and evaluate ideas through experiments.<span class="bilingual-ko" lang="ko">로봇 연구를 직접 경험하거나 향후 대학원 진학을 고민하는 학부생을 환영합니다. 연구 문제 설정부터 시스템 구현과 실험까지 함께 배울 수 있습니다.</span></p>
 </section>
 </div>
@@ -52,5 +52,5 @@ permalink: /join/
   <a href="mailto:{{ site.email }}" class="text-link">{{ site.email }} <span aria-hidden="true">→</span></a>
 </section>
 
-<div class="join-note"><strong>Lab location · 연구실 위치:</strong> {{ site.address }}</div>
+<div class="join-note"><strong>Lab location · 연구실 위치:</strong><br>{{ site.address }}<br><span lang="ko">{{ site.address_ko }}</span></div>
 </div>
