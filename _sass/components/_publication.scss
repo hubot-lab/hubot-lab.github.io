@@ -14,22 +14,6 @@
     border-bottom: none;
   }
 
-  .pub-title {
-    font-weight: 600;
-    color: var(--text-primary);
-  }
-
-  .pub-authors {
-    font-size: 0.9375rem;
-    color: var(--text-secondary);
-  }
-
-  .pub-venue {
-    font-size: 0.875rem;
-    color: var(--text-muted);
-    font-style: italic;
-  }
-
   .pub-actions {
     display: flex;
     flex-wrap: wrap;
@@ -79,11 +63,6 @@ a.pub-thumbnail:hover img {
 
 .publication-list .bibliography > li {
   max-width: none;
-}
-
-// Year badge — accent pill floated right
-.year-badge {
-  display: none;
 }
 
 // Collapsible bibtex/abstract

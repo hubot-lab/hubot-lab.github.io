@@ -1,8 +1,0 @@
----
-layout: null
----
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" rx="24" fill="#151714"/>
-  <circle cx="75" cy="25" r="10" fill="#ef5b2a"/>
-  <path d="M25 23v54M25 50h38M63 23v54" fill="none" stroke="#fffdf7" stroke-width="11" stroke-linecap="round"/>
-</svg>

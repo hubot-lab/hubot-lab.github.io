@@ -1,6 +1,5 @@
 // =============================================================
-// site.js — Dark mode, publication filter, toggles, scroll effects,
-//           copy bibtex, back-to-top, year badges
+// Site interactions: theme, publications, navigation, and scroll effects.
 // =============================================================
 
 (function () {
@@ -99,20 +98,6 @@
     wrapper.appendChild(btn);
   });
 
-  // ----- Publication Year Badges -----
-
-  document.querySelectorAll('.pub-entry').forEach(function (entry) {
-    var text = entry.textContent;
-    // Match a 4-digit year in parentheses, common in citation format
-    var match = text.match(/\((\d{4})\)/);
-    if (match) {
-      var badge = document.createElement('span');
-      badge.className = 'year-badge';
-      badge.textContent = match[1];
-      entry.insertBefore(badge, entry.firstChild);
-    }
-  });
-
   // ----- Back to Top Button -----
 
   var topBtn = document.createElement('button');
@@ -168,103 +153,6 @@
   } else {
     fadeElements.forEach(function (el) {
       el.classList.add('visible');
-    });
-  }
-
-  // ----- Site Search -----
-
-  var searchToggleBtn = document.getElementById('searchToggle');
-  var searchOverlay = document.getElementById('searchOverlay');
-  var searchInputEl = document.getElementById('searchInput');
-  var searchResultsEl = document.getElementById('searchResults');
-  var searchData = null;
-
-  function openSearch() {
-    if (!searchOverlay) return;
-    searchOverlay.classList.add('open');
-    setTimeout(function () { searchInputEl.focus(); }, 100);
-  }
-
-  function closeSearch() {
-    if (!searchOverlay) return;
-    searchOverlay.classList.remove('open');
-    searchInputEl.value = '';
-    searchResultsEl.innerHTML = '';
-  }
-
-  if (searchToggleBtn) {
-    searchToggleBtn.addEventListener('click', openSearch);
-  }
-
-  if (searchOverlay) {
-    searchOverlay.addEventListener('click', function (e) {
-      if (e.target === searchOverlay) closeSearch();
-    });
-  }
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && searchOverlay && searchOverlay.classList.contains('open')) {
-      closeSearch();
-    }
-    // Cmd/Ctrl + K to open search
-    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-      e.preventDefault();
-      if (searchOverlay && searchOverlay.classList.contains('open')) {
-        closeSearch();
-      } else {
-        openSearch();
-      }
-    }
-  });
-
-  function loadSearchData(callback) {
-    if (searchData) { callback(searchData); return; }
-    fetch('/assets/search.json')
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        searchData = data;
-        callback(data);
-      })
-      .catch(function () {
-        searchResultsEl.innerHTML = '<div class="search-no-results">Could not load search index.</div>';
-      });
-  }
-
-  function renderResults(query, data) {
-    if (!query) {
-      searchResultsEl.innerHTML = '';
-      return;
-    }
-    var q = query.toLowerCase();
-    var matches = data.filter(function (item) {
-      return item.title.toLowerCase().includes(q) ||
-             item.content.toLowerCase().includes(q);
-    });
-
-    if (matches.length === 0) {
-      searchResultsEl.innerHTML = '<div class="search-no-results">No results for "' + query + '"</div>';
-      return;
-    }
-
-    searchResultsEl.innerHTML = matches.map(function (item) {
-      var snippet = item.content.substring(0, 150).trim() + '...';
-      return '<a href="' + item.url + '" class="search-result-item">' +
-        '<div class="search-result-title">' + item.title + '</div>' +
-        '<div class="search-result-snippet">' + snippet + '</div>' +
-        '</a>';
-    }).join('');
-  }
-
-  if (searchInputEl) {
-    var debounceTimer;
-    searchInputEl.addEventListener('input', function () {
-      var query = this.value.trim();
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(function () {
-        loadSearchData(function (data) {
-          renderResults(query, data);
-        });
-      }, 150);
     });
   }
 

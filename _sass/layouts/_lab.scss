@@ -146,6 +146,8 @@
 .page-intro > p:last-child,
 .publication-intro > p:last-child { max-width: 680px; margin: 1.75rem 0 0; font-size: 1.05rem; }
 
+.error-page > p:not(.section-index) { margin: 1.75rem 0; font-size: 1.05rem; }
+
 .focus-row {
   display: grid;
   grid-template-columns: 100px minmax(0, 1fr);

@@ -28,7 +28,6 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
 
   <!-- Accent color from config -->
   {% if site.accent_color %}
@@ -50,12 +49,6 @@
       }
     })();
   </script>
-
-  {% if jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
-
-  {% include mathjax.html %}
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
