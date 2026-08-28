@@ -8,7 +8,7 @@ permalink: /
 <div class="lab-page-root" markdown="0">
 <section class="lab-hero" aria-labelledby="hero-title">
   <div class="hero-copy">
-    <p class="eyebrow">Soongsil University · Seoul <span lang="ko">/ 숭실대학교 · 서울</span></p>
+    <p class="eyebrow">Soongsil University · 숭실대학교</p>
     <h1 id="hero-title">Human-Centered Robotics &amp; Physical Intelligence.</h1>
     <p class="hero-subtitle">Building robots that understand, learn from, and work with humans.<span class="bilingual-ko" lang="ko">사람을 이해하고, 사람에게 배우며, 사람과 협력하는 로봇을 연구합니다.</span></p>
     <div class="hero-actions">
